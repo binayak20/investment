@@ -5,7 +5,7 @@ import { VscBell } from 'react-icons/vsc';
 import { MdOutlineHeadsetMic, MdArrowBackIos } from 'react-icons/md';
 import { useMediaQuery } from '@mantine/hooks';
 import MobileMenu from './MobileMenu';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const useStyles = createStyles((theme) => ({
     header: {
@@ -96,7 +96,7 @@ const InnerPageHeader = ({title, links}) => {
                                 <ActionIcon variant="transparent">
                                     <VscBell size={18} color="#2a2a2a" />
                                 </ActionIcon>
-                                <ActionIcon variant="transparent">
+                                <ActionIcon component={Link} to="/support" variant="transparent">
                                     <MdOutlineHeadsetMic size={18} color="#2a2a2a" />
                                 </ActionIcon>
                             </Flex>

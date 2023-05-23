@@ -106,7 +106,7 @@ const RootHeader = ({links}) => {
                                 <ActionIcon variant="transparent">
                                     <VscBell size={18} color="#2a2a2a" />
                                 </ActionIcon>
-                                <ActionIcon variant="transparent">
+                                <ActionIcon component={Link} to="/support" variant="transparent">
                                     <MdOutlineHeadsetMic size={18} color="#2a2a2a" />
                                 </ActionIcon>
                             </Flex>
