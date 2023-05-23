@@ -1,3 +1,23 @@
+/*
+Default Breakpoints
+  xs	36em
+  sm	48em
+  md	62em
+  lg	75em
+  xl	88em
+*/
+
+body {
+  background-color: #f7f8f9 !important;
+  padding-top: 46px;
+}
+
+@media screen and (max-width: 48em) {
+  body {
+    padding-bottom: 68px;
+  }
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +55,344 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/* *******
+
+  1. Presets
+  2. Site Header
+
+******* */
+
+/* Preset Start */
+a:not(.anchor-link) {
+  text-decoration: none;
+}
+
+.w-100 {
+  width: 100%;
+}
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.section-padding {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* .section-padding+.section-padding {
+  padding-top: 0;
+} */
+
+@media screen and (max-width: 30em) {
+  .section-padding {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.stacked-icon-btn .icon-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.pt-0 {
+  padding-top: 0 !important;
+}
+
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
+.pl-0 {
+  padding-left: 0 !important;
+}
+
+.pr-0 {
+  padding-right: 0 !important;
+}
+
+.mantine-Modal-root {
+  z-index: 9999;
+}
+
+.mantine-Modal-inner,
+.mantine-Overlay-root {
+  z-index: 9999;
+}
+
+/* Preset End */
+
+
+/* Site Header Start */
+@media screen and (max-width: 48em) {
+  .logo {
+    max-width: 168px;
+  }
+}
+
+.language-icon {
+  /* height: 14px; */
+  width: 18px;
+}
+
+.mobile-menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #f5f5f5;
+  background: #fff;
+  z-index: 999;
+}
+
+.mobile-menu a {
+  color: #afb1b5;
+  padding: 10px 5px;
+}
+
+.mobile-menu a .label {
+  font-size: 14px;
+
+}
+.mobile-menu a svg,
+.mobile-menu a .icon {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.mobile-menu a.active {
+  color: #1ad9ff;
+}
+
+
+.mobile-menu a:active,
+.mobile-menu a:focus,
+.mobile-menu a:hover {
+  background: #f7f7f7;
+}
+
+.language-list .lang-flag {
+  max-width: 34px;
+  max-height: 22px;
+  margin-right: 10px;
+}
+
+/* Site Header End */
+
+/* Home Carousal Start */
+.home-main-carousal .mantine-Carousel-indicators button {
+  border: 1px solid #e1e1e1;
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .home-main-carousal .mantine-Carousel-indicators button {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.styles_ticker__-0UvZ {
+  flex: 1 !important;
+}
+
+.styles_ticker__-0UvZ,
+.styles_ticker-list__1JKu- {
+  background: #fff;
+}
+
+.styles_ticker-list__1JKu- a {
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+}
+
+.styles_ticker-list__1JKu- a:hover {
+  background: #fff;
+}
+
+.styles_ticker-list__1JKu- a .styles_meta__I1GUO {
+  font-size: 12px;
+}
+
+.styles_newsWrapper__KvsKt {
+  align-items: center;
+}
+
+.ticker-pre-icon,
+.ticker-suf-icon {
+  border: none;
+}
+
+.news-ticker-container {
+  flex: 1 1 auto;
+  width: 100%;
+}
+
+.news-ticker a {
+  white-space: nowrap;
+  margin-right: 120px;
+  color: #222;
+}
+
+
+.ticker-module_tickerContent__yCJv2 {
+  animation: ticker-module_slide_custom 60s linear infinite !important;
+  margin-left: 10%;
+}
+
+@keyframes ticker-module_slide_custom {
+  0% {
+    transform: translateX(0)
+  }
+
+  to {
+    transform: translateX(-100%)
+  }
+}
+
+/* Home Carousal End */
+.stacked-icon-btn.home-links .mantine-ThemeIcon-root {
+  background: transparent;
+  width: 4rem;
+  height: 4rem;
+}
+
+@media screen and (max-width: 30em) {
+  .stacked-icon-btn.home-links .mantine-ThemeIcon-root {
+    width: 3rem;
+    height: 3rem;
+    min-width: 3rem;
+    min-height: 3rem;
+  }
+  .stacked-icon-btn.home-links .mantine-ThemeIcon-root svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .stacked-icon-btn.home-links .mantine-Text-root {
+    font-size: 0.92rem;
+    word-break: break-all;
+  }
+}
+
+.calculator-select {
+  border-radius: 15px;
+}
+
+.calculator-select .mantine-Select-input {
+  padding-left: 2.8rem;
+  font-weight: 500;
+  border-radius: 15px;
+  background: #f8feff;
+  box-shadow: 0 1.5px 0 rgba(37,36,51,.15);
+  border: none;
+}
+
+.calculator-table,
+.calculator-table td {
+  border-color: #1ad9ff;
+}
+
+.calculator-table td {
+  background: #f8feff;
+}
+
+/* .amount-input {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.amount-input .mantine-TextInput-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.amount-input input {
+  height: 100%;
+} */
+.amount-input {
+  background-color: #fff;
+  min-height: 60px;
+}
+.amount-input input {
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 60px;
+  display:inline-block;
+  position:relative;
+}
+
+.market-volatility-table td {
+  border: none !important;
+}
+
+.market-volatility-table .rate {
+  background-color: #ccc;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.market-volatility-table .rate.green {
+  background-color: #11a23a!important;
+}
+
+.market-volatility-table .rate.red {
+  background-color: #c15c4e!important;
+}
+
+/* ***************************** */
+
+.login-form {
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.privacy-policy-link {
+  color: #f54c18;
+  text-align: center;
 }
